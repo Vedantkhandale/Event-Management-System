@@ -1,0 +1,208 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: url('./img/CulturalEvent.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Background Overlay for Low Opacity Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5 means 50% transparent) */
+    z-index: -1;
+}
+
+/* Container for Content */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* White transparent box */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*  */
+
+/* Import Modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
+/* Fancy Heading */
+.fancy-heading {
+    font-size: 1.8rem; /* Size thoda chota kiya */
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff; /* Golden color for classy look */
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.6), 0 0 3px rgba(255, 255, 255, 0.5);
+    letter-spacing: 1.5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fancy-heading:hover {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 12px rgba(255, 215, 0, 0.8), 0 0 6px rgba(255, 255, 255, 0.7);
+}
+
+.navbar-logo{
+    width: 180px;
+    height: 20px;
+    /* border :1px solid red; */
+    padding: 10px;
+    position: relative;
+    left: 40px;
+    display: inline;
+}
+
+
+/* Navbar */
+header {
+    background: rgba(106, 27, 154, 0.9); /* Transparent purple */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FFD700 !important; /* Golden color on hover */
+    transform: scale(1.1);
+}
+
+/* Event Gallery Styling */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures uniform size */
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+    .gallery-item img {
+        height: 200px; /* Adjust height for small screens */
+    }
+}
+
+
+/* Footer */
+footer {
+    background: #6A1B9A; /* पुराना Dark Purple background */
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: white;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Footer Icons */
+.footer-icons {
+    margin-top: 15px;
+}
+
+.footer-icons a {
+    color: red;
+    font-size: 24px;
+    margin: 0 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icons a:hover {
+    color: #FFD700;
+}
+
+/* Footer Container */
+.footer .container {
+    background-color: black; /* Footer container का background black कर दिया */
+}
+
+/* Image Gallery */
+.gallery-img {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+/* Welcome raiosni event  */
+.welcome-box {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.welcome-box:hover {
+    transform: scale(1.05);
+}
+
+.welcome-box h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome-box p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
