@@ -17,7 +17,7 @@ session_start();
     <style>
         .gallery-img {
             height: 250px;
-            object-fit: cover;
+            object-fit: cover; 
             width: 100%;
             border-radius: 10px;
         }
@@ -150,7 +150,7 @@ session_start();
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="gallery-item">
-                <img src="./img/indian.jpeg" class="img-fluid rounded shadow gallery-img" alt="Workshop Event">
+                <img src="./img/edu.jpeg" class="img-fluid rounded shadow gallery-img" alt="Workshop Event">
             </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
